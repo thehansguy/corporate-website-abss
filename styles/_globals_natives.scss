@@ -1,0 +1,45 @@
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: normal;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: normal;
+    max-width: 50ch;
+  }
+
+  button {
+    border: none;
+  
+    background: $color6;
+    color: white;
+    font-size: 18px;
+    padding: 1% 2%;
+    margin-top: 3%;
+    // margin: 2% 0 2% 0;
+    width: fit-content;
+    padding: 3%;
+  }
+  
+  form {
+    display: flex;
+    gap: 2%;
+    align-items: flex-end;
+  
+    margin-top: 7%;
+  }
+
+  

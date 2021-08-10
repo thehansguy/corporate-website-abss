@@ -1,0 +1,207 @@
+// #region-index page
+#home-hero {
+  max-height: 896px;
+  min-height: 90vh;
+  background: url("../images/hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  //Tablet
+  @media screen and (min-width: 600px) {
+  }
+  //Desktop
+  @media screen and (min-width: 1024px) {
+  }
+}
+#home-section-1 {
+  height: auto;
+  padding: 2%;
+  background-color: #e5e5e5;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  .section-container {
+    text-align: center;
+    .p-body-heading {
+      margin-bottom: 7%;
+    }
+    button {
+      margin-top: 7%;
+      margin-bottom: 7%;
+    }
+  }
+
+  //Tablet
+  @media screen and (min-width: 600px) {
+  }
+  //Desktop
+  @media screen and (min-width: 1024px) {
+  }
+}
+.home-section-2 {
+  height: auto;
+  background-color: #fff;
+
+  &__section-container {
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+
+    margin: 7% auto 7% auto;
+    img {
+      max-width: 100%;
+
+      height: auto;
+
+      display: block;
+      margin-left: 0;
+    }
+    .orange-rectangle {
+      justify-self: start;
+      padding: 1% 2%;
+      img {
+        display: inline;
+        width: 7%;
+      }
+    }
+    p {
+      max-width: 50ch;
+      text-align: left;
+    }
+  }
+
+  //Tablet
+  @media screen and (min-width: 600px) {
+  }
+  //Desktop
+  @media screen and (min-width: 1024px) {
+  }
+}
+
+.home-section-3 {
+  height: auto;
+  padding-bottom: 10vh;
+  background: rgba(255, 90, 0, 0.1);
+  position: relative;
+
+  &__images {
+    position: relative;
+    margin-bottom: 20vh;
+
+    &__back-image {
+      // back image
+      position: relative;
+
+      margin-top: 5%;
+      left: 45%;
+
+      max-width: 40vw;
+      min-width: 40vw;
+      max-height: 30%;
+      min-height: 50vh;
+
+      background: pink;
+      background-image: url("../images/homepage-image-3.jpg");
+
+      background-size: cover;
+      background-position: right;
+
+      // border: 3px solid black;
+      display: block;
+    }
+
+    &__front-image {
+      // front image
+      position: absolute;
+      left: -85%;
+      top: 40%;
+
+      padding-left: 5%;
+
+      max-width: 45vw;
+      min-width: 45vw;
+      max-height: 30%;
+      min-height: 40vh;
+
+      // background: #405779;
+      background-image: url("../images/homepage-image-2.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      // border: 3px solid black;
+      display: block;
+      .h-orange-heading {
+        margin-bottom: clamp(5%, 15rem, 10vh);
+      }
+      p {
+        color: white;
+        font-size: 2rem;
+        max-width: 35ch;
+        margin-left: 10%;
+      }
+    }
+  }
+}
+
+.home-section-4 {
+  height: auto;
+  background-color: white;
+
+  padding: 5%;
+
+  .section-container {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 2fr;
+    gap: 12%;
+
+    background-color: $color7;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+
+    &__left {
+      grid-area: left;
+      color: white;
+      font-size: 2.4rem;
+      font-weight: bold;
+      min-width: 10ch;
+      max-width: 10ch;
+    }
+
+    &__right {
+      grid-area: right;
+
+      p {
+        color: white;
+
+        font-size: 1.5rem;
+        font-weight: 300;
+        min-width: 25ch;
+      }
+      form {
+        display: flex;
+        gap: 2%;
+        align-items: flex-end;
+
+        margin-top: 7%;
+        input {
+        }
+        button {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+// #endregion

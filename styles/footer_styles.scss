@@ -1,0 +1,257 @@
+@mixin display-flex($alignment, $direction) {
+  display: flex;
+  align-items: $alignment;
+  flex-direction: $direction;
+  gap: 4rem;
+}
+
+.p-footer-heading {
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+
+
+     //Not available
+     @media screen and (min-width: 1px) {
+      footer{
+        display: none;
+      }
+    }
+
+    //Mobile smaller
+   @media screen and (min-width: 315px) {
+    footer {
+      height: auto;
+      background-color: black;
+      color: white;
+      padding: 1rem;
+    
+      @include display-flex(center, column);
+    
+      .footer-top {
+        @include display-flex(none, column);
+    
+        ul {
+          @include display-flex(none, none);
+          gap: 3rem;
+          h3{
+            font-size: smaller;
+          }
+        }
+    
+        &__right {
+          h3 {
+            text-align: center;
+            font-size: small;
+          }
+    
+          form {
+            margin-top: 0;
+            justify-content: center;
+            button{
+              font-size: small;
+            }
+          }
+        }
+      }
+    
+      .footer-bottom {
+        @include display-flex(center, column);
+        margin-top: 3%;
+        ul {
+          @include display-flex(none, row);
+    
+          list-style: none;
+        }
+      }
+    
+
+    }
+  }
+    
+    //Mobile
+   @media screen and (min-width: 460px) {
+    footer {
+      height: auto;
+      background-color: black;
+      color: white;
+      padding: 3rem;
+    
+      @include display-flex(center, column);
+    
+      .footer-top {
+        @include display-flex(none, column);
+    
+        ul {
+          @include display-flex(none, none);
+          gap: 3  rem;
+          h3{
+            font-size: small;
+          }
+        }
+    
+        &__right {
+          h3 {
+            text-align: center;
+          }
+    
+          form {
+            margin-top: 0;
+            justify-content: center;
+          }
+        }
+      }
+    
+      .footer-bottom {
+        @include display-flex(center, column);
+        margin-top: 3%;
+        ul {
+          @include display-flex(none, row);
+    
+          list-style: none;
+        }
+      }
+    
+
+    }
+  }
+
+ 
+ 
+ //Tablet
+ @media screen and (min-width: 1234px) {
+  footer {
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 3rem;
+  
+    @include display-flex(center, column);
+  
+    .footer-top {
+      @include display-flex(none, column);
+  
+      ul {
+        @include display-flex(none, none);
+        gap: 7rem;
+        h3{
+          font-size: large;
+        }
+      }
+  
+      &__right {
+        h3 {
+          text-align: center;
+          font-size: initial;
+        }
+  
+        form {
+          margin-top: 0;
+          justify-content: center;
+        }
+      }
+    }
+  
+    .footer-bottom {
+      @include display-flex(center, column);
+      margin-top: 3%;
+      ul {
+        @include display-flex(none, row);
+  
+        list-style: none;
+      }
+    }
+    @media screen and (min-width: 1234px) {
+      flex-direction: column;
+      gap: 5rem;
+  
+      .footer-top {
+        flex-direction: row;
+        justify-content: space-around;
+  
+        &__left {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          gap: 5rem;
+        }
+  
+        &__right {
+          margin-left: 15rem;
+        }
+      }
+    }
+
+  }
+}
+//Desktop
+@media screen and (min-width: 1320px) {
+  footer {
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 3rem;
+  
+    @include display-flex(center, column);
+  
+    .footer-top {
+      @include display-flex(none, column);
+  
+      ul {
+        @include display-flex(none, none);
+        gap: 7rem;
+        h3{
+          font-size: initial;
+        }
+      }
+  
+      &__right {
+        h3 {
+          text-align: center;
+          font-size: initial;
+        }
+  
+        form {
+          margin-top: 0;
+          justify-content: center;
+        }
+      }
+    }
+  
+    .footer-bottom {
+      @include display-flex(center, column);
+      margin-top: 3%;
+      ul {
+        @include display-flex(none, row);
+  
+        list-style: none;
+      }
+    }
+    @media screen and (min-width: 1234px) {
+      flex-direction: column;
+      gap: 5rem;
+  
+      .footer-top {
+        flex-direction: row;
+        justify-content: space-around;
+  
+        &__left {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          gap: 5rem;
+        }
+  
+        &__right {
+          margin-left: 15rem;
+        }
+      }
+    }
+
+  }
+
+
+}

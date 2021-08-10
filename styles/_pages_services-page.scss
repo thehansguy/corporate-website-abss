@@ -1,0 +1,18 @@
+// #region-services page
+.services-section-1 {
+  height: auto;
+  background-color: #e5e5e5;
+  .section-1-container {
+    padding-bottom: 3%;
+  }
+}
+.services-section-2 {
+  height: 100vh;
+  background-color: rgba(255, 90, 0, 0.1);
+  position: relative;
+}
+.swiper-scrollbar {
+  display: none;
+}
+
+// #endregion
